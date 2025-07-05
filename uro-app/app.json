@@ -1,0 +1,56 @@
+{
+  "expo": {
+    "name": "Учи Расти Остани",
+    "slug": "uci-rasti-ostani",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#4A90E2"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ucirastiostani.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Ova aplikacija koristi kameru za skeniranje QR kodova karata.",
+        "NSMicrophoneUsageDescription": "Ova aplikacija može koristiti mikrofon za poboljšano korisničko iskustvo."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#4A90E2"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.ucirastiostani.app",
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-barcode-scanner",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Ova aplikacija koristi kameru za skeniranje QR kodova karata."
+        }
+      ]
+    ],
+    "scheme": "ucirastiostani",
+    "extra": {
+      "supportedLanguages": ["sr", "en"],
+      "defaultLanguage": "sr"
+    }
+  }
+}
