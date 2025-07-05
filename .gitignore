@@ -1,0 +1,4 @@
+node_modules/ # Example for Node.js projects
+.DS_Store # macOS junk file
+node_modules/
+.DS_Store
